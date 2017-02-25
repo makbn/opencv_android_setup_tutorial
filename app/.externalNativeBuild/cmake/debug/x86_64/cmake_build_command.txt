@@ -1,0 +1,15 @@
+Executable : C:\android-sdk\cmake\3.6.3155560\bin\cmake.exe
+arguments : 
+-HG:\AR\Maremat\app
+-BG:\AR\Maremat\app\.externalNativeBuild\cmake\debug\x86_64
+-GAndroid Gradle - Ninja
+-DANDROID_ABI=x86_64
+-DANDROID_NDK=C:\work\android-ndk-r12b
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=G:\AR\Maremat\app\build\intermediates\cmake\debug\obj\x86_64
+-DCMAKE_BUILD_TYPE=Debug
+-DCMAKE_MAKE_PROGRAM=C:\android-sdk\cmake\3.6.3155560\bin\ninja.exe
+-DCMAKE_TOOLCHAIN_FILE=C:\android-sdk\cmake\3.6.3155560\android.toolchain.cmake
+-DANDROID_NATIVE_API_LEVEL=21
+-DCMAKE_CXX_FLAGS=
+jvmArgs : 
+

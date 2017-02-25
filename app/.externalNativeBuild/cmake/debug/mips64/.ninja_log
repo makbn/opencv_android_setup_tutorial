@@ -1,0 +1,4 @@
+# ninja log v5
+1	1382	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	2d2e512ff6f81c9c
+1383	1468	0	../../../../build/intermediates/cmake/debug/obj/mips64/libnative-lib.so	a316d81181d05c73
+0	606	0	CMakeFiles/libdetection_based_tracker.dir/src/main/cpp/libdetection_based_tracker.cpp.o	baff993c4c5a4746

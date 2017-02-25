@@ -1,0 +1,64 @@
+
+{
+	"buildFiles" : [ "G:/AR/Maremat/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"C:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build G:\\AR\\Maremat\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"lib_opencv-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "lib_opencv",
+			"buildType" : "debug",
+			"output" : "G:/AR/Maremat/app/src/main/jniLibs/arm64-v8a/libopencv_java3.so",
+			"toolchain" : "2764662921"
+		},
+		"libdetection_based_tracker-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "libdetection_based_tracker",
+			"buildCommand" : "C:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build G:\\AR\\Maremat\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target libdetection_based_tracker",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target aarch64-none-linux-android -gcc-toolchain C:/work/android-ndk-r12b/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=C:/work/android-ndk-r12b/platforms/android-21/arch-arm64  -Dlibdetection_based_tracker_EXPORTS -I..\\..\\..\\..\\src\\main\\jniLibs\\jni\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "G:/AR/Maremat/app/src/main/cpp/libdetection_based_tracker.cpp",
+					"workingDirectory" : "G:/AR/Maremat/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "G:/AR/Maremat/app/build/intermediates/cmake/debug/obj/arm64-v8a/liblibdetection_based_tracker.so",
+			"toolchain" : "2764662921"
+		},
+		"native-lib-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "native-lib",
+			"buildCommand" : "C:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build G:\\AR\\Maremat\\app\\.externalNativeBuild\\cmake\\debug\\arm64-v8a --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target aarch64-none-linux-android -gcc-toolchain C:/work/android-ndk-r12b/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=C:/work/android-ndk-r12b/platforms/android-21/arch-arm64  -Dnative_lib_EXPORTS -I..\\..\\..\\..\\src\\main\\jniLibs\\jni\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\arm64-v8a\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti  -O0 -fno-limit-debug-info -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "G:/AR/Maremat/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "G:/AR/Maremat/app/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "G:/AR/Maremat/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so",
+			"toolchain" : "2764662921"
+		}
+	},
+	"toolchains" : 
+	{
+		"2764662921" : 
+		{
+			"cCompilerExecutable" : "C:/work/android-ndk-r12b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/work/android-ndk-r12b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

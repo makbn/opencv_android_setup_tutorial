@@ -1,0 +1,4 @@
+G:/AR/Maremat/app/.externalNativeBuild/cmake/release/mips64/CMakeFiles/native-lib.dir
+G:/AR/Maremat/app/.externalNativeBuild/cmake/release/mips64/CMakeFiles/edit_cache.dir
+G:/AR/Maremat/app/.externalNativeBuild/cmake/release/mips64/CMakeFiles/libdetection_based_tracker.dir
+G:/AR/Maremat/app/.externalNativeBuild/cmake/release/mips64/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,64 @@
+
+{
+	"buildFiles" : [ "G:/AR/Maremat/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"C:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build G:\\AR\\Maremat\\app\\.externalNativeBuild\\cmake\\release\\x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"lib_opencv-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "lib_opencv",
+			"buildType" : "release",
+			"output" : "G:/AR/Maremat/app/src/main/jniLibs/x86/libopencv_java3.so",
+			"toolchain" : "2764662921"
+		},
+		"libdetection_based_tracker-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "libdetection_based_tracker",
+			"buildCommand" : "C:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build G:\\AR\\Maremat\\app\\.externalNativeBuild\\cmake\\release\\x86 --target libdetection_based_tracker",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target i686-none-linux-android -gcc-toolchain C:/work/android-ndk-r12b/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=C:/work/android-ndk-r12b/platforms/android-15/arch-x86  -Dlibdetection_based_tracker_EXPORTS -I..\\..\\..\\..\\src\\main\\jniLibs\\jni\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "G:/AR/Maremat/app/src/main/cpp/libdetection_based_tracker.cpp",
+					"workingDirectory" : "G:/AR/Maremat/app/.externalNativeBuild/cmake/release/x86"
+				}
+			],
+			"output" : "G:/AR/Maremat/app/build/intermediates/cmake/release/obj/x86/liblibdetection_based_tracker.so",
+			"toolchain" : "2764662921"
+		},
+		"native-lib-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "native-lib",
+			"buildCommand" : "C:\\android-sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build G:\\AR\\Maremat\\app\\.externalNativeBuild\\cmake\\release\\x86 --target native-lib",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target i686-none-linux-android -gcc-toolchain C:/work/android-ndk-r12b/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=C:/work/android-ndk-r12b/platforms/android-15/arch-x86  -Dnative_lib_EXPORTS -I..\\..\\..\\..\\src\\main\\jniLibs\\jni\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\libs\\x86\\include -isystem C:\\work\\android-ndk-r12b\\sources\\cxx-stl\\gnu-libstdc++\\4.9\\include\\backward  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -fno-exceptions -fno-rtti  -O2 -DNDEBUG -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "G:/AR/Maremat/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "G:/AR/Maremat/app/.externalNativeBuild/cmake/release/x86"
+				}
+			],
+			"output" : "G:/AR/Maremat/app/build/intermediates/cmake/release/obj/x86/libnative-lib.so",
+			"toolchain" : "2764662921"
+		}
+	},
+	"toolchains" : 
+	{
+		"2764662921" : 
+		{
+			"cCompilerExecutable" : "C:/work/android-ndk-r12b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/work/android-ndk-r12b/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}
