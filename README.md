@@ -13,7 +13,7 @@ before starting tutorial its better to know the [version of tools](#tools-versio
 
 Tool | Version
 ------------ | -------------
-OpenCV Android SDK | openCv-3.2.0
+OpenCV Android SDK | openCV-3.2.0
 Android Studio | v2.2.2
 Android SDK build-tools | v25
 Android SDK platform-tools | v25.0.3
@@ -117,6 +117,7 @@ include $(BUILD_SHARED_LIBRARY)
 
 * `{OpenCV.mk_DIR}` : directory of `OpenCV.mk` file under under OpenCV SDK directory `\sdk\native\jni\OpenCV.mk`
 * `{INCLUDE_DIR}` : directory of OpenCV include folder under OpenCV SDK directory `\sdk\native\jni\include`
+*  `LOCAL_MODULE` : name of native cpp file that you need for writing native cpp code! skip for now.
 
 Optional config:
 * `OPENCV_CAMERA_MODULES` and `OPENCV_INSTALL_MODULES` : if you turn this option **off** your application need external OpenCV Package Manager installed on user device to work!
