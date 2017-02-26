@@ -50,6 +50,9 @@ Time to creating New Android Project
 2. Its clear that you need to fill **Application Name** and **Company Domain** but most Important Job here is to check **Include C++ Support**
 3. Continue like all other default android project and in the last step before click on **Finish** you need to set your C++ Standard! i use **Toolchain Default**!
 
+* if you got an exceptin with this message : ``Error:NDK not configured. 
+Download it with SDK manager.)`` you should follow this steps:
+
 Add OpenCV Java Wrapper Module!
 
 1. On **File** menu click on **New** and click on **Import Module**!
