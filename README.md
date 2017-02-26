@@ -6,9 +6,9 @@ my goal is to make it easy to create an android CV application with **[OpenCV](h
 before starting tutorial its better to know the [version of tools](#tools-version) that i used!
 
 #
-<p align="center">
+
 ![OpenCV for Android](/images/LOGO.png)
-</p>
+
 #Tools Version
 
 Tool | Version
