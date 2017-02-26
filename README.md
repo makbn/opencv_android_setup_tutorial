@@ -102,7 +102,7 @@ OPENCV_INSTALL_MODULES:=on
 include {OpenCV.mk_DIR}
 
 LOCAL_SRC_FILES  := native-lib.cpp
-LOCAL_C_INCLUDES += C:\work\OpenCV-android-sdk\sdk\native\jni\include
+LOCAL_C_INCLUDES += {INCLUDE_DIR}
 LOCAL_LDLIBS     += -llog -ldl
 LOCAL_CFLAGS    += -DOPENCV_OLDER_VISION
 
@@ -115,7 +115,9 @@ LOCAL_MODULE     := native-lib
 include $(BUILD_SHARED_LIBRARY)
 ```
 
-* `{OpenCV.mk_DIR}` : directory of your `OpenCV.mk` file under under OpenCV SDK directory `\sdk\native\jni\OpenCV.mk`
+* `{OpenCV.mk_DIR}` : directory of `OpenCV.mk` file under under OpenCV SDK directory `\sdk\native\jni\OpenCV.mk`
+* `{INCLUDE_DIR}` : directory of OpenCV include folder under OpenCV SDK directory `\sdk\native\jni\include`
 
-
+Optional config:
+* `OPENCV_CAMERA_MODULES` and `OPENCV_INSTALL_MODULES` : if you turn this option **off** your application need external OpenCV Package Manager installed on user device to work!
 
