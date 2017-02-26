@@ -8,4 +8,4 @@ before starting tutorial its better to know the version of tools that i used for
 [NO!Just take me to the notes](https://github.com/makbn/OpenCV_sample_android_studio/wiki)!
 
 
-[![Makbn](https://github.com/makbn/OpenCV_sample_android_studio/blob/master/images/logo.jpg)](/#)
+[![CodePath](http://pasteboard.co/3Unlx9xyt.png)](http://codepath.com)
