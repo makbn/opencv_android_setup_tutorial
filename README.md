@@ -23,11 +23,11 @@ Android Official NDK | android-ndk-r12b
 
 #Getting Start
 
-First of all you need to download [**OpenCv Android SDK**](http://opencv.org/downloads.html) and [**Android Official NDK**](https://developer.android.com/ndk/downloads/index.html)!
+##First of all you need to download [**OpenCv Android SDK**](http://opencv.org/downloads.html) and [**Android Official NDK**](https://developer.android.com/ndk/downloads/index.html)!
 * Extract downloaded NDK in a simple direction without  space in dir path! like C:\work\android-ndk-r12b
 * Extract extract OpenCV SDK beside NDK folder (technically this direction is **Not** important! :smile:)
 
-Edit system environment for java and ndk-build:
+##Edit system environment for java and ndk-build:
 
 1. Right click on **This PC** and go to **Properties** find **Advanced dystem Settings** on right side and open it!
 2. In new Window go to **Advanced** tab and click on **Environment Variables**.
@@ -36,7 +36,7 @@ Edit system environment for java and ndk-build:
 5. Add the path of **NDK** like step 4!for NDK you need to add root direction! like : C:\work\android-ndk-r12b
 6. Done!
 
-Installing Cmake for Android SDK:
+##Installing Cmake for Android SDK:
 
 1. Open **Android Studio** and go to **Settings**
 2. Go to **Appearance & Behavior** and click on **System settings** on opened sublist,and find **Android SDK**!
@@ -44,7 +44,7 @@ Installing Cmake for Android SDK:
 
 #Creating Project
 
-Time to creating New Android Project
+##Time to creating New Android Project
 
 1. Open **Android Studio** and clcik on **New Projcet** (its all over and done! :smile:)
 2. Its clear that you need to fill **Application Name** and **Company Domain** but most Important Job here is to check **Include C++ Support**
@@ -53,10 +53,10 @@ Time to creating New Android Project
 * if you got an exceptin with this message : ``Error:NDK not configured. 
 Download it with SDK manager.)`` you should follow this steps:
 
-4. open **Project Structure** under **File** tab.
-5. set you NDK direction in **Android NDK location** and Done!
+  4. open **Project Structure** under **File** tab.
+  5. set you NDK direction in **Android NDK location** and Done!
 
-Add OpenCV Java Wrapper Module!
+##Add OpenCV Java Wrapper Module!
 
 1. On **File** menu click on **New** and click on **Import Module**!
 2. Go to {YOUR_OPENCV_SDK_DIR}\sdk\ and select **java** folder!click on **OK**!
