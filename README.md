@@ -9,5 +9,5 @@ before starting tutorial its better to know the version of tools that i used for
 
 #
 
-![OpenCV for Android](/images/logo.png)
+![OpenCV for Android](/images/LOGO.png)
 
