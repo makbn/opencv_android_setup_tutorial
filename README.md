@@ -79,8 +79,11 @@ compile project(':openCVLibrary320')
 ###Add native libs
 
 You need to add native libraries for different type of proccessors!fortunetly OpenCV provides all of them for you and you can find them under OpenCV SDK directory `\sdk\native\libs`!
-* you can add them all but its better to add what you need specificly!
+
 In order to add a specific proccessor's library you just need to copy that folder and paste it under *jniLibs* folder!
+
+* you can add them all but its better to add what you need specificly!
+
 
 
 
