@@ -60,7 +60,7 @@ Download it with SDK manager.)`` you should follow this steps:
 ###Add OpenCV Java Wrapper Module!
 
 1. On **File** menu click on **New** and click on **Import Module**!
-2. Go to {YOUR_OPENCV_SDK_DIR}\sdk\ and select **java** folder!click on **OK**!
+2. Go to *{YOUR_OPENCV_SDK_DIR}\sdk\* and select **java** folder!click on **OK**!
 3. Click on next then finish.
 4. Open app level gradle and add this line under **dependencies** scope:
 
