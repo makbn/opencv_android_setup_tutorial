@@ -74,6 +74,14 @@ compile project(':openCVLibrary320')
 1. Right click on *app* folder (or its better to say app module) of your project!
 2. Click on **New** an go to **Folder** submenu, select **JNI Folder**.
 3. Check **Change Folder Location**
-4. Change `src/main/jni/` to `src/main/jniLibs/` and click on "Finish"
+4. Change `src/main/jni/` to `src/main/jniLibs/` and click on **Finish**
+
+###Add native libs
+
+You need to add native libraries for different type of proccessors!fortunetly OpenCV provides all of them for you and you can find them under OpenCV SDK directory `\sdk\native\libs`!
+* you can add them all but its better to add what you need specificly!
+In order to add a specific proccessor's library you just need to copy that folder and paste it under *jniLibs* folder!
+
+
 
 
