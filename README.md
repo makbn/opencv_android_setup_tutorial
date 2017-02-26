@@ -3,7 +3,7 @@
 Welcome guys!
 my goal is to make it easy to create an android CV application with **[OpenCV](http://opencv.org/)** libraries.
 
-before starting tutorial its better to know the version of tools that i used for this tutorial!or:
+before starting tutorial its better to know the [version of tools](#tools-version) that i used for this tutorial!or:
 
 [NO!Just take me to the notes](https://github.com/makbn/OpenCV_sample_android_studio/wiki)!
 
