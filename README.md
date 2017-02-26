@@ -61,7 +61,7 @@ Add OpenCV Java Wrapper Module!
 compile project(':openCVLibrary320')
 
 ```
-* `openCVLibrary320` is the name of added module from OpenCV and it may have diffrent name for you!
+* `openCVLibrary320` is the name of added module from OpenCV and it may have different name for you!
 
 
 
