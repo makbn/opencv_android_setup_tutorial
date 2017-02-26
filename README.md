@@ -99,7 +99,7 @@ OPENCV_LIB_TYPE:=SHARED
 OPENCV_CAMERA_MODULES:=on
 OPENCV_INSTALL_MODULES:=on
 
-include C:\work\OpenCV-android-sdk\sdk\native\jni\OpenCV.mk
+include {OpenCV.mk_DIR}
 
 LOCAL_SRC_FILES  := native-lib.cpp
 LOCAL_C_INCLUDES += C:\work\OpenCV-android-sdk\sdk\native\jni\include
@@ -115,7 +115,7 @@ LOCAL_MODULE     := native-lib
 include $(BUILD_SHARED_LIBRARY)
 ```
 
-
+* `{OpenCV.mk_DIR}` : directory of your `OpenCV.mk` file under under OpenCV SDK directory `\sdk\native\jni\OpenCV.mk`
 
 
 
