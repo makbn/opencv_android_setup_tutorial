@@ -6,3 +6,6 @@ my goal is to make it easy to create android CV application with [OpenCV](http:/
 before starting tutorial its better to know the version of tools that i used for this tutorial!or:
 
 [NO!Just take me to the notes](https://github.com/makbn/OpenCV_sample_android_studio/wiki)!
+
+
+[![Makbn](https://github.com/makbn/OpenCV_sample_android_studio/blob/master/images/logo.jpg)](/#)
