@@ -36,7 +36,7 @@ First of all you need to download [**OpenCv Android SDK**](http://opencv.org/dow
 5. Add the path of **NDK** like step 4!for NDK you need to add root direction! like : C:\work\android-ndk-r12b
 6. Done!
 
-##Installing Cmake for Android SDK:
+###Installing Cmake for Android SDK:
 
 1. Open **Android Studio** and go to **Settings**
 2. Go to **Appearance & Behavior** and click on **System settings** on opened sublist,and find **Android SDK**!
@@ -44,7 +44,7 @@ First of all you need to download [**OpenCv Android SDK**](http://opencv.org/dow
 
 #Creating Project
 
-##Time to creating New Android Project
+###Time to creating New Android Project
 
 1. Open **Android Studio** and clcik on **New Projcet** (its all over and done! :smile:)
 2. Its clear that you need to fill **Application Name** and **Company Domain** but most Important Job here is to check **Include C++ Support**
@@ -56,7 +56,7 @@ Download it with SDK manager.)`` you should follow this steps:
   4. open **Project Structure** under **File** tab.
   5. set you NDK direction in **Android NDK location** and Done!
 
-##Add OpenCV Java Wrapper Module!
+###Add OpenCV Java Wrapper Module!
 
 1. On **File** menu click on **New** and click on **Import Module**!
 2. Go to {YOUR_OPENCV_SDK_DIR}\sdk\ and select **java** folder!click on **OK**!
