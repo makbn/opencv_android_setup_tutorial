@@ -20,3 +20,7 @@ Android SDK platform-tools | v25.0.3
 Android Official NDK | android-ndk-r12b
 
 * **OS:** Windows 10 :shit:
+
+#Getting Start
+
+First of all you need to download [**OpenCv Android SDK**](http://opencv.org/downloads.html) and [**Android Official NDK**](https://developer.android.com/ndk/downloads/index.html)!
