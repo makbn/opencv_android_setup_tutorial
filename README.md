@@ -40,4 +40,15 @@ Installing Cmake for Android SDK:
 
 1. Open **Android Studio** and go to **Settings**
 2. Go to **Appearance & Behavior** and click on **System settings** on opened sublist,and find **Android SDK**!
-3. Click on **SDK Tools** tab and make sure that **CMake** is installe.if not!check it for install!
+3. Click on **SDK Tools** tab and make sure that **CMake** is install. if not!check it for install!
+
+#Creating Project
+
+Time to creating New Android Project
+
+1. Open **Android Studio** and clcik on **New Projcet** (its all over and done! :smile:)
+2. Its clear that you need to fill **Application Name** and **Company Domain** but most Important Job here is to check **Include C++ Support**
+3. continue like all other default android project and in the last step before click on **Finish** you need to set your C++ Standard! i use **Toolchain Default**!
+
+Add OpenCV Java Wrapper Module!
+
