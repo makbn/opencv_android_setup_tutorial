@@ -11,10 +11,10 @@ or:
 
 #
 <p align="center">
-![OpenCV for Android](/images/LOGO.png)
+<img src="/images/LOGO.png">
 </p>
 #Tools Version
-<p align="center">
+
 Tool | Version
 ------------ | -------------
 OpenCV Android SDK | openCv-3.2.0
@@ -22,4 +22,4 @@ Android Studio | v2.2.2
 Android SDK build-tools | v25
 Android SDK platform-tools | v25.0.3
 Android Official NDK | android-ndk-r12b
-</p>
+
