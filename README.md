@@ -19,3 +19,4 @@ Android SDK build-tools | v25
 Android SDK platform-tools | v25.0.3
 Android Official NDK | android-ndk-r12b
 
+* [**OS:** Windows 10 :shit:]
