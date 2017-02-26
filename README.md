@@ -69,7 +69,11 @@ compile project(':openCVLibrary320')
 ```
 * `openCVLibrary320` is the name of added module from OpenCV and it may have different name for you!
 
+###Add *jniLibs* folder
 
-
+1. Right click on *app* folder (or its better to say app module) of your project!
+2. Click on **New** an go to **Folder** submenu, select **JNI Folder**.
+3. Check **Change Folder Location**
+4. Change `src/main/jni/` to `src/main/jniLibs/` and click on "Finish"
 
 
