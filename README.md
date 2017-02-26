@@ -23,7 +23,7 @@ Android Official NDK | android-ndk-r12b
 
 #Getting Start
 
-##First of all you need to download [**OpenCv Android SDK**](http://opencv.org/downloads.html) and [**Android Official NDK**](https://developer.android.com/ndk/downloads/index.html)!
+First of all you need to download [**OpenCv Android SDK**](http://opencv.org/downloads.html) and [**Android Official NDK**](https://developer.android.com/ndk/downloads/index.html)!
 * Extract downloaded NDK in a simple direction without  space in dir path! like C:\work\android-ndk-r12b
 * Extract extract OpenCV SDK beside NDK folder (technically this direction is **Not** important! :smile:)
 
