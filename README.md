@@ -48,7 +48,18 @@ Time to creating New Android Project
 
 1. Open **Android Studio** and clcik on **New Projcet** (its all over and done! :smile:)
 2. Its clear that you need to fill **Application Name** and **Company Domain** but most Important Job here is to check **Include C++ Support**
-3. continue like all other default android project and in the last step before click on **Finish** you need to set your C++ Standard! i use **Toolchain Default**!
+3. Continue like all other default android project and in the last step before click on **Finish** you need to set your C++ Standard! i use **Toolchain Default**!
 
 Add OpenCV Java Wrapper Module!
+
+1. On **File** menu click on **New** and click on **Import Module**!
+2. Go to {YOUR_OPENCV_SDK_DIR}\sdk\ and select **java** folder!click on **OK**!
+3. Click on next then finish.
+4. Open app level gradle and add this line under **dependencies** scope:
+
+```gradle
+compile project(':openCVLibrary320')
+,,,
+
+
 
