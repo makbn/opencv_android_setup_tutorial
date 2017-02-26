@@ -11,7 +11,7 @@ or:
 
 #
 <p align="center">
-<img src="/images/LOGO.png">
+<img src="http://pasteboard.co/3Unlx9xyt.png">
 </p>
 #Tools Version
 
