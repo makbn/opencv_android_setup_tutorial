@@ -53,6 +53,9 @@ Time to creating New Android Project
 * if you got an exceptin with this message : ``Error:NDK not configured. 
 Download it with SDK manager.)`` you should follow this steps:
 
+4. open **Project Structure** under **File** tab.
+5. set you NDK direction in **Android NDK location** and Done!
+
 Add OpenCV Java Wrapper Module!
 
 1. On **File** menu click on **New** and click on **Import Module**!
