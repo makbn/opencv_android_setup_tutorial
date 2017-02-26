@@ -35,3 +35,9 @@ Edit system environment for java and ndk-build:
 4. Click **New** button in opened window and paste the direction of your java **bin** folder! like : C:\Program Files\Java\jdk1.8.0_40\bin\
 5. Add the path of **NDK** like step 4!for NDK you need to add root direction! like : C:\work\android-ndk-r12b
 6. Done!
+
+Installing Cmake for Android SDK:
+
+1. Open **Android Studio** and go to **Settings**
+2. Go to **Appearance & Behavior** and click on **System settings** on opened sublist,and find **Android SDK**!
+3. Click on **SDK Tools** tab and make sure that **CMake** is installe.if not!check it for install!
