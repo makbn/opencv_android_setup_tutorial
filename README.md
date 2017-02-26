@@ -28,6 +28,7 @@ First of all you need to download [**OpenCv Android SDK**](http://opencv.org/dow
 * Extract extract OpenCV SDK beside NDK folder (technically this direction is **Not** important! :smile:)
 
 Edit system environment for java and ndk-build 
+
 1. Right click on **This PC** and go to **Properties** find **Advanced dystem Settings** on right side and open it!
 2. In new Window go to **Advanced** tab and click on **Environment Variables**.
 3. Find **PATH** variable for current user and click on **Edit**
