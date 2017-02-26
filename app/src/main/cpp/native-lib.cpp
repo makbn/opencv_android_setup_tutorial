@@ -1,4 +1,4 @@
-#include <jni.h>
+#include "native-lib.h"
 #include <string>
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
@@ -9,19 +9,11 @@
 using namespace std;
 using namespace cv;
 
-extern "C"
-{
+JNIEXPORT jstring JNICALL
+Java_ir_whiteapp_maremat_Inpainting_test(JNIEnv *env, jclass type, jint a) {
 
-JNIEXPORT void JNICALL
-Java_ir_whiteapp_maremat_MainActivity_salt(JNIEnv *env, jobject instance, jlong matAddrGray,
-                                           jint nbrElem) {
+    // TODO
 
-    Mat &mGr = *(Mat *) matAddrGray;
-    for (int k = 0; k < nbrElem; k++) {
-        int i = rand() % mGr.cols;
-        int j = rand() % mGr.rows;
-        mGr.at<uchar>(j, i) = 255;
-    }
 
-}
+    return env->NewStringUTF("hiiii");
 }
