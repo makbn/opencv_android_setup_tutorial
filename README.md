@@ -59,7 +59,11 @@ Add OpenCV Java Wrapper Module!
 
 ```gradle
 compile project(':openCVLibrary320')
-,,,
+
+```
+* `openCVLibrary320` is the name of added module from OpenCV and it may have diffrent name for you!
+
+
 
 
 
