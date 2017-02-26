@@ -85,6 +85,36 @@ In order to add a specific proccessor's library you just need to copy that folde
 
 * you can add them all but its better to add what you need specificly!
 
+###Create `Android.mk` file and configure it!
+
+1. Create new File under *jniLibs* dir and name it `Android.mk`!
+2. Copy this lines and paste there:
+
+```mk
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+OPENCV_LIB_TYPE:=SHARED
+OPENCV_CAMERA_MODULES:=on
+OPENCV_INSTALL_MODULES:=on
+
+include C:\work\OpenCV-android-sdk\sdk\native\jni\OpenCV.mk
+
+LOCAL_SRC_FILES  := native-lib.cpp
+LOCAL_C_INCLUDES += C:\work\OpenCV-android-sdk\sdk\native\jni\include
+LOCAL_LDLIBS     += -llog -ldl
+LOCAL_CFLAGS    += -DOPENCV_OLDER_VISION
+
+LOCAL_CPP_FEATURES += exceptions (Recommended)
+LOCAL_CPPFLAGS += -fexceptions
+
+
+LOCAL_MODULE     := native-lib
+
+include $(BUILD_SHARED_LIBRARY)
+```
+
 
 
 
