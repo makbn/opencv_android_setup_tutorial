@@ -34,7 +34,7 @@ First of all you need to download [**OpenCv Android SDK**](http://opencv.org/dow
 3. Find **PATH** variable for current user and click on **Edit**
 4. Click **New** button in opened window and paste the direction of your java **bin** folder! like : *C:\Program Files\Java\jdk1.8.0_40\bin\*
 
-5. Add the path of **NDK** like step 4!for NDK you need to add root direction! like : *C:\work\android-ndk-r12b*
+5. Add the path of **NDK** like step 4!for NDK you need to add root direction! like : * C:\work\android-ndk-r12b *
 6. Done!
 
 ### Installing Cmake for Android SDK:
