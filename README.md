@@ -32,7 +32,8 @@ First of all you need to download [**OpenCv Android SDK**](http://opencv.org/dow
 1. Right click on **This PC** and go to **Properties** find **Advanced dystem Settings** on right side and open it!
 2. In new Window go to **Advanced** tab and click on **Environment Variables**.
 3. Find **PATH** variable for current user and click on **Edit**
-4. Click **New** button in opened window and paste the direction of your java **bin** folder! like : *C:\Program Files\Java\jdk1.8.0_40\bin\*
+4. Click **New** button in opened window and paste the direction of your java **bin** folder! 
+like : *C:\Program Files\Java\jdk1.8.0_40\bin\*
 
 5. Add the path of **NDK** like step 4!for NDK you need to add root direction! like : *C:\work\android-ndk-r12b*
 6. Done!
