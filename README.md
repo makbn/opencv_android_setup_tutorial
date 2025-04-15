@@ -1,125 +1,163 @@
-# Tutorial on OpenCV for Android Setup
+# Tutorial: Setting Up OpenCV for Android
 
-Welcome guys!
-my goal is to make it easy to create an android CV application with **[OpenCV](http://opencv.org/)** libraries.
+Hey everyone,  
+Welcome!  
+My goal with this tutorial is to make it super easy for you to create an Android application using the **[OpenCV](http://opencv.org/)** library.
 
-before starting tutorial its better to know the [version of tools](#tools-version) that i used!
+Before we dive in, it's helpful to check the [tool versions](#tools-version) I used to avoid any compatibility issues.
 
 #
 
 ![OpenCV for Android](/images/LOGO.png)
 
-# Tools Version
+---
+
+## Tools Version
 
 Tool | Version
 ------------ | -------------
-OpenCV Android SDK | openCV-3.2.0
-Android Studio | v2.2.2
-Android SDK build-tools | v25
-Android SDK platform-tools | v25.0.3
-Android Official NDK | android-ndk-r12b
+OpenCV Android SDK | openCV-3.2.0  
+Android Studio | v2.2.2  
+Android SDK Build-tools | v25  
+Android SDK Platform-tools | v25.0.3  
+Android Official NDK | android-ndk-r12b  
 
-* **OS:** Windows 10 :shit:
+**OS:** Windows 10
 
-# Getting Start
+---
 
-First of all you need to download [**OpenCv Android SDK**](http://opencv.org/downloads.html) and [**Android Official NDK**](https://developer.android.com/ndk/downloads/index.html)!
-* Extract downloaded NDK in a simple direction without  space in dir path! like *C:\work\android-ndk-r12b*
-* Extract extract OpenCV SDK beside NDK folder (technically this direction is **Not** important! :smile:)
+## Getting Started
 
-### Edit system environment for java and ndk-build:
+First things first—download these:
 
-1. Right click on **This PC** and go to **Properties** find **Advanced dystem Settings** on right side and open it!
-2. In new Window go to **Advanced** tab and click on **Environment Variables**.
-3. Find **PATH** variable for current user and click on **Edit**
-4. Click **New** button in opened window and paste the direction of your java **bin** folder! 
-like : *C:\Program Files\Java\jdk1.8.0_40\bin\*
+- [**OpenCV Android SDK**](http://opencv.org/downloads.html)  
+- [**Android NDK (Native Development Kit)**](https://developer.android.com/ndk/downloads/index.html)
 
-5. Add the path of **NDK** like step 4!for NDK you need to add root direction! like : *C:\work\android-ndk-r12b*
+### Extract the Files
+
+- Extract the NDK to a directory **without spaces** in the path, e.g. `C:\work\android-ndk-r12b`
+- Extract the OpenCV SDK to a location near the NDK (though its exact location doesn't really matter)
+
+---
+
+## Setting Up Environment Variables (Java & NDK)
+
+1. Right-click **This PC** → **Properties** → click **Advanced system settings**
+2. In the window that appears, go to the **Advanced** tab and click **Environment Variables**
+3. Under **User variables**, find the `PATH` variable and click **Edit**
+4. Click **New**, then add the path to your Java `bin` folder  
+   _Example:_ `C:\Program Files\Java\jdk1.8.0_40\bin\`
+5. Add the NDK root path in the same way  
+   _Example:_ `C:\work\android-ndk-r12b`
 6. Done!
 
-### Installing Cmake for Android SDK:
+---
+
+## Installing CMake (Required for Native Code)
 
 1. Open **Android Studio** and go to **Settings**
-2. Go to **Appearance & Behavior** and click on **System settings** on opened sublist,and find **Android SDK**!
-3. Click on **SDK Tools** tab and make sure that **CMake** is install. if not!check it for install!
+2. Navigate to **Appearance & Behavior** → **System Settings** → **Android SDK**
+3. Go to the **SDK Tools** tab and make sure **CMake** is checked and installed  
+   If it’s not, check it and click **Apply**
 
-# Creating Project
+---
 
-### Time to creating New Android Project
+## Creating Your Android Project
 
-1. Open **Android Studio** and clcik on **New Projcet** (its all over and done! :smile:)
-2. Its clear that you need to fill **Application Name** and **Company Domain** but most Important Job here is to check **Include C++ Support**
-3. Continue like all other default android project and in the last step before click on **Finish** you need to set your C++ Standard! i use **Toolchain Default**!
+Let’s build your first project:
 
-* if you got an exceptin with this message : ``Error:NDK not configured. 
-Download it with SDK manager.)`` you should follow this steps:
+1. Open **Android Studio** → click **New Project**
+2. Fill in the **Application Name** and **Company Domain**
+3. **Important:** Check the box for **Include C++ Support**
+4. Proceed with the default settings  
+   On the final screen before clicking **Finish**, set the C++ standard. I recommend using **Toolchain Default**
 
-  4. open **Project Structure** under **File** tab.
-  5. set you NDK direction in **Android NDK location** and Done!
+> **Note:**  
+If you encounter this error:  
+`Error: NDK not configured. Download it with SDK manager.`  
+Follow these steps:
+- Go to **File** → **Project Structure**
+- Set the correct **NDK path** under **Android NDK location**
 
-### Add OpenCV Java Wrapper Module!
+---
 
-1. On **File** menu click on **New** and click on **Import Module**!
-2. Go to ` {YOUR_OPENCV_SDK_DIR}\sdk\ ` and select **java** folder!click on **OK**!
-3. Click on next then finish.
-4. Open app level gradle and add this line under **dependencies** scope:
+## Import the OpenCV Java Module
+
+1. Go to **File** → **New** → **Import Module**
+2. Navigate to `{YOUR_OPENCV_SDK_DIR}\sdk\` and select the `java` folder  
+3. Click **OK**, then **Next**, then **Finish**
+4. Open your app-level `build.gradle` file and add this under `dependencies`:
 
 ```gradle
-compile project(':openCVLibrary320')
-
+implementation project(':openCVLibrary320')
 ```
-* `openCVLibrary320` is the name of added module from OpenCV and it may have different name for you!
 
-### Add *jniLibs* folder
+> `openCVLibrary320` is the default module name. Yours might differ depending on the SDK version.
 
-1. Right click on *app* folder (or its better to say app module) of your project!
-2. Click on **New** an go to **Folder** submenu, select **JNI Folder**.
-3. Check **Change Folder Location**
-4. Change `src/main/jni/` to `src/main/jniLibs/` and click on **Finish**
+---
 
-### Add native libs
+## Add `jniLibs` Folder
 
-You need to add native libraries for different type of proccessors!fortunetly OpenCV provides all of them for you and you can find them under OpenCV SDK directory `\sdk\native\libs`!
+1. Right-click the **app** module → **New** → **Folder** → **JNI Folder**
+2. Check **Change Folder Location**
+3. Change the directory from `src/main/jni/` to `src/main/jniLibs/`
+4. Click **Finish**
 
-In order to add a specific proccessor's library you just need to copy that folder and paste it under *jniLibs* folder!
+---
 
-* you can add them all but its better to add what you need specificly!
+## Add Native Libraries
 
-### Create `Android.mk` file and configure it!
+You’ll need native libraries for each processor architecture you want to support. Luckily, OpenCV provides them all!
 
-1. Create new File under *jniLibs* dir and name it `Android.mk`!
-2. Copy this lines and paste there:
+- They’re located in `\sdk\native\libs` inside the OpenCV SDK
+- Copy only the folders you need (or all of them) into your project’s `jniLibs` directory
 
-```mk
+> Pro tip: Only include the architectures you plan to support to reduce app size.
+
+---
+
+## Create and Configure `Android.mk`
+
+1. Inside `jniLibs`, create a new file named `Android.mk`
+2. Add the following content:
+
+```make
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-OPENCV_LIB_TYPE:=SHARED
-OPENCV_CAMERA_MODULES:=on
-OPENCV_INSTALL_MODULES:=on
+OPENCV_LIB_TYPE := SHARED
+OPENCV_CAMERA_MODULES := on
+OPENCV_INSTALL_MODULES := on
 
 include {OpenCV.mk_DIR}
 
 LOCAL_SRC_FILES  := native-lib.cpp
 LOCAL_C_INCLUDES += {INCLUDE_DIR}
 LOCAL_LDLIBS     += -llog -ldl
-LOCAL_CFLAGS    += -DOPENCV_OLDER_VISION
+LOCAL_CFLAGS     += -DOPENCV_OLDER_VERSION
 
-LOCAL_CPP_FEATURES += exceptions (Recommended)
+LOCAL_CPP_FEATURES += exceptions
 LOCAL_CPPFLAGS += -fexceptions
-
 
 LOCAL_MODULE     := native-lib
 
 include $(BUILD_SHARED_LIBRARY)
 ```
 
-* `{OpenCV.mk_DIR}` : directory of `OpenCV.mk` file under under OpenCV SDK directory `\sdk\native\jni\OpenCV.mk`
-* `{INCLUDE_DIR}` : directory of OpenCV include folder under OpenCV SDK directory `\sdk\native\jni\include`
-*  `LOCAL_MODULE` : name of native cpp file that you need for writing native cpp code! skip for now.
+### Notes:
+- `{OpenCV.mk_DIR}` → path to `OpenCV.mk`, usually:  
+  `\sdk\native\jni\OpenCV.mk`
+- `{INCLUDE_DIR}` → path to OpenCV’s `include` directory:  
+  `\sdk\native\jni\include`
+- `LOCAL_MODULE` → name of your native C++ source file (`native-lib.cpp`)
 
-Optional config:
-* `OPENCV_CAMERA_MODULES` and `OPENCV_INSTALL_MODULES` : if you turn this option **off** your application need external OpenCV Package Manager installed on user device to work!
+> Optional Configs:  
+- `OPENCV_CAMERA_MODULES` and `OPENCV_INSTALL_MODULES`:  
+  Set to **off** if you want the app to require the OpenCV Manager app on the user's device
 
+---
+
+## That’s It!
+
+You’re now all set to start building your Android OpenCV app with native C++ support.
